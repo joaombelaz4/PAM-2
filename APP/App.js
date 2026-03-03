@@ -7,7 +7,7 @@ export default function App() {
     redirect: 'follow'
   };
 
-  fetch("https://literate-waffle-7v5q9gpxxjvghx79v-3000.app.github.dev/", requestOptions)
+  fetch("https://literate-waffle-7v5q9gpxxjvghx79v-3000.app.github.dev/posts", requestOptions)
     .then(response => response.text())
     .then(result => console.log(result))
     .catch(error => console.log('error', error));
